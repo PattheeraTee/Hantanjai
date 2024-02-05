@@ -12,6 +12,8 @@ import com.example.hantanjai.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     //Hantanjai
 
+//    ปอนด์เห็นมั้ย
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
