@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.hantanjai.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    //ทดลองแตกไหม แตกรึป่าว
     //Hantanjai
 
 //    ปอนด์เห็นมั้ย
