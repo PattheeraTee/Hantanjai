@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Hantanjai</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">หน้าหลัก</string>
+    <string name="title_dashboard">บิลต้องจ่าย</string>
+    <string name="title_notifications">แจ้งเตือน</string>
+    <string name="title_other">อื่นๆ</string>
 </resources>
