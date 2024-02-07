@@ -1,6 +1,8 @@
 package com.example.hantanjai
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     //Hantanjai
 
 //    ปอนด์เห็นมั้ย
-
+    var btnhomelogin: Button? =null
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        btnhomelogin!!.setOnClickListener {
+            var intent = Intent(this,login::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val navView: BottomNavigationView = binding.navView
 
@@ -30,10 +37,16 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications,R.id.navigation_other
             )
         )
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+    }
+    fun init(){
+        btnhomelogin = findViewById(R.id.btnhomelogin)
+
     }
 }
